@@ -1,11 +1,13 @@
 {
   "name": "sprint_11_training",
+  "homepage": "https://xryctdm.github.io/hello-test/",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open --watch"
+    "dev": "webpack-dev-server --mode development --open --watch",
+    "build": "rimraf dist webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Dmitry Khrustalev",
   "license": "ISC",
@@ -17,7 +19,7 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "~2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",
     "path": "^0.12.7",
